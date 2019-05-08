@@ -30,13 +30,14 @@ Kan vi skriva och kontrollera vår kod
 ## Test Driven Development TDD
 Kod som körs och testar din kod
 
-Du har blivit inhyrd för att skriva färdigt denna funktion
+Du har blivit inhyrd för att skriva färdigt denna funktion som ska returnera ett biljettpris baserat på ålder
+
+Barnbiljetter, <18 kostar 10
+Vuxenbiljetter, <65 kostar 20
+Pensionärsbiljetter och annat kostar 15
 
 `   
     function ticketPrice(Int $age) : Int {
-        // Barnbiljetter, <18 kostar 10
-        // Vuxenbiljetter, <65 kostar 20
-        // Pensionärsbiljetter och annat kostar 15
         $price = 0;
         return $price;
     }
@@ -44,9 +45,9 @@ Du har blivit inhyrd för att skriva färdigt denna funktion
 
 ## Selenium-IDE
 Testa
-[] RÖTT
-[] GRÖNT
-[] Refactor
+* RÖTT
+* GRÖNT
+* Refactor
 
 Skriv ett test som misslyckats (så att du vet att det inte är fel på testet)
 Skriv den minsta mängden kod för att testet ska lyckas (så att du vet att det inte är fel på testet)
