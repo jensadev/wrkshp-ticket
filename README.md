@@ -33,13 +33,18 @@ Kod som körs och testar din kod
 Du har blivit inhyrd för att skriva färdigt denna funktion som ska returnera ett biljettpris baserat på ålder
 
 Barnbiljetter, <18 kostar 10
+
 Vuxenbiljetter, <65 kostar 20
+
 Pensionärsbiljetter och annat kostar 15
 
 `   
     function ticketPrice(Int $age) : Int {
+
         $price = 0;
+        
         return $price;
+        
     }
 `
 
