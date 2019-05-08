@@ -1,0 +1,252 @@
+{
+  "id": "99f13275-e05e-48de-a11c-334326f0dcc2",
+  "version": "2.0",
+  "name": "localtest",
+  "url": "https://8001-b33f90c6-126e-4c1e-8c4f-8af909485432.ws-eu0.gitpod.io",
+  "tests": [{
+    "id": "951a0e20-aed1-4e4e-a607-3533ae283b6e",
+    "name": "loginform",
+    "commands": [{
+      "id": "f93559b8-33ef-474a-8d02-db40ea1ace6b",
+      "comment": "",
+      "command": "open",
+      "target": "/~jens/wrkshp-ticket/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9ae607c-81e3-46c7-a0ef-da416833b352",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1460x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b0e5b62-d95d-40f9-ac00-0395a7edf739",
+      "comment": "",
+      "command": "click",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6bce9d8-4c03-428b-bfc6-be3b2206cbe4",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputEmail",
+      "targets": [
+        ["id=inputEmail", "id"],
+        ["name=inputEmail", "name"],
+        ["css=#inputEmail", "css:finder"],
+        ["xpath=//input[@id='inputEmail']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test@test.se"
+    }, {
+      "id": "07bf5dd2-b665-4ec8-89a3-435e146c9cb0",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=inputPassword", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cf2cb90-f816-4005-a71b-4d89bb818c75",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputPassword",
+      "targets": [
+        ["id=inputPassword", "id"],
+        ["name=inputPassword", "name"],
+        ["css=#inputPassword", "css:finder"],
+        ["xpath=//input[@id='inputPassword']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "7ada8e71-1c12-46af-97b1-0fdc4db87e41",
+      "comment": "",
+      "command": "click",
+      "target": "id=inputRemember",
+      "targets": [
+        ["id=inputRemember", "id"],
+        ["name=inputRemember", "name"],
+        ["css=#inputRemember", "css:finder"],
+        ["xpath=//input[@id='inputRemember']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c684706-373a-4c8f-8793-ebdd1e13bc9c",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "069887ac-b873-42c0-b576-874b0a5b9037",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "405ee84c-8455-4778-9316-6b43132932f5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=pre",
+      "targets": [
+        ["css=pre", "css:finder"],
+        ["xpath=//pre", "xpath:position"],
+        ["xpath=//pre[contains(.,'Array\n(\n    [inputEmail] => test@test.se\n    [inputPassword] => test\n    [inputRemember] => remember-me\n    [submit] => \n)\n')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5238488a-b4e3-43be-8851-6036ce625cc4",
+    "name": "ticket price",
+    "commands": [{
+      "id": "e2db0466-bc50-4390-9ee3-98cf8b60b36e",
+      "comment": "Var noga med att uppdatera testets URL",
+      "command": "open",
+      "target": "/price.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "179d349a-9a81-48f2-b8a0-6ef6f250afda",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1460x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9333710-933e-4906-9bc6-969ff4df76e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputAge",
+      "targets": [
+        ["id=inputAge", "id"],
+        ["name=inputAge", "name"],
+        ["css=#inputAge", "css:finder"],
+        ["xpath=//input[@id='inputAge']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "066c22ff-8c83-42cb-b5ca-8e0d8ec31f7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ede655-2a39-4457-aedd-cf337885bdaa",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "targets": [],
+      "value": "Your ticket price is: 10"
+    }, {
+      "id": "e15526c4-8943-4f35-96f4-e3dc48952873",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputAge",
+      "targets": [
+        ["id=inputAge", "id"],
+        ["name=inputAge", "name"],
+        ["css=#inputAge", "css:finder"],
+        ["xpath=//input[@id='inputAge']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "37"
+    }, {
+      "id": "a05d6cc8-bcf0-4b97-83b3-b205ef22ae10",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7f66969-2856-4683-9a75-83b988002448",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "targets": [],
+      "value": "Your ticket price is: 20"
+    }, {
+      "id": "c2caa542-af21-40fc-919b-9b605b360556",
+      "comment": "",
+      "command": "type",
+      "target": "id=inputAge",
+      "targets": [
+        ["id=inputAge", "id"],
+        ["name=inputAge", "name"],
+        ["css=#inputAge", "css:finder"],
+        ["xpath=//input[@id='inputAge']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "87"
+    }, {
+      "id": "e3d7066c-8d5b-4dae-ac73-65e528990bf7",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfb21dd8-8615-4615-b7f1-adeea7d87966",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=p",
+      "targets": [],
+      "value": "Your ticket price is: 15"
+    }]
+  }],
+  "suites": [{
+    "id": "5b5f43a5-a196-4dd5-8721-d0de20a737cc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["951a0e20-aed1-4e4e-a607-3533ae283b6e"]
+  }],
+  "urls": ["http://localhost/", "http://localhost/~jens/price.php", "https://8001-ac267932-8415-4360-ad29-4d2bb522cd2e.ws-eu0.gitpod.io/", "https://8001-b33f90c6-126e-4c1e-8c4f-8af909485432.ws-eu0.gitpod.io/"],
+  "plugins": []
+}

@@ -14,6 +14,7 @@
             // Barnbiljetter, <18 kostar 10
             // Vuxenbiljetter, <65 kostar 20
             // Pensionärsbiljetter och annat kostar 15
+            $price = 0;
 
             if($age < 18) {
                 $price = 10;
@@ -22,6 +23,7 @@
             } else {
                 $price = 15;
             }
+
             return $price;
         }
     ?>
