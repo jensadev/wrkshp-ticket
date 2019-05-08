@@ -9,26 +9,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php
-    	function ticketPrice(Int $age) : Int {
-            // Barnbiljetter, <18 kostar 10
-            // Vuxenbiljetter, <65 kostar 20
-            // Pensionärsbiljetter och annat kostar 15
-
-            if($age < 18) {
-                $price = 10;
-            } elseif($age < 65) {
-                $price = 20;
-            } else {
-                $price = 15;
-            }
-            return $price;
-        }
-    ?>
-
     <main role="main" class="container inner cover">
 
     <?php
+        	function ticketPrice(Int $age) : Int {
+            // Barnbiljetter, <18 kostar 10
+            // Vuxenbiljetter, <65 kostar 20
+            // Pensionärsbiljetter och annat kostar 15
+            $price = 0;
+            return $price;
+        }
+
         if (isset($_POST['submit'])) {
             echo "<div class='alert alert-primary' role='alert'>";
             echo "<p>Your ticket price is: " . ticketPrice($_POST['inputAge']) . "</p>";
@@ -43,7 +34,7 @@
 
             <div class="form-label-group">
                 <label for="inputAge" class="sr-only">Age: </label>
-                <input type="number" id="inputAge" name="inputAge" class="form-control" placeholder="Age" required autofocus>        
+                <input type="number" id="inputAge" name="inputAge" class="form-control" placeholder="Age" required autofocus>
             </div>
             <button id="submit" class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Submit</button>
         </form>
