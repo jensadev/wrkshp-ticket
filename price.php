@@ -9,18 +9,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <main role="main" class="container inner cover">
-
     <?php
     	function ticketPrice(Int $age) : Int {
             // Barnbiljetter, <18 kostar 10
             // Vuxenbiljetter, <65 kostar 20
             // Pensionärsbiljetter och annat kostar 15
-            $price = 0;
 
+            if($age < 18) {
+                $price = 10;
+            } elseif($age < 65) {
+                $price = 20;
+            } else {
+                $price = 15;
+            }
             return $price;
         }
+    ?>
 
+    <main role="main" class="container inner cover">
+
+    <?php
         if (isset($_POST['submit'])) {
             echo "<div class='alert alert-primary' role='alert'>";
             echo "<p>Your ticket price is: " . ticketPrice($_POST['inputAge']) . "</p>";

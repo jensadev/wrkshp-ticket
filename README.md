@@ -32,6 +32,7 @@ Kod som körs och testar din kod
 
 Du har blivit inhyrd för att skriva färdigt denna funktion
 
+<<<<<<< HEAD
 `   
     function ticketPrice(Int $age) : Int {`
         // Barnbiljetter, <18 kostar 10
@@ -42,6 +43,15 @@ Du har blivit inhyrd för att skriva färdigt denna funktion
         return $price;
     }
 `
+=======
+`function ticketPrice(Int $age) : Int {
+    // Barnbiljetter, <18 kostar 10
+    // Vuxenbiljetter, <65 kostar 20
+    // Pensionärsbiljetter och annat kostar 15
+    $price = 0;
+    return $price;
+}`
+>>>>>>> 1f5a0cb61d68bde74371eb4deed503c00353fbb1
 
 ## Selenium-IDE
 Testa
