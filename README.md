@@ -27,6 +27,12 @@ Fel i logiken
 # Hur kan vi förhindra detta?
 Kan vi skriva och kontrollera vår kod
 
+## Validering
+Klientside
+input type - number, text
+Server side
+filter - filter_var(value, FILTER_VALIDATE_INT)
+
 ## Test Driven Development TDD
 Kod som körs och testar din kod
 
